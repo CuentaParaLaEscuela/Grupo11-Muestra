@@ -22,6 +22,13 @@ body{
   margin-right:15px;
   text-align:center;
   font-size:25px;
+  cursor: pointer;
+  transition-duration: 2s ; 
+  transition-timing-function: cubic-bezier(0.1, 0.3, 0.1, 1)
+}
+
+.nav .navcenter:hover{
+transform: scale(1.2);
 }
 p{
   position:absolute;
