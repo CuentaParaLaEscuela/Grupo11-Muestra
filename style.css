@@ -10,10 +10,10 @@ a{
   color:black;
 }
 body{
-  background-color: #1f1642;
+  background-color: #090414;
 }
 .nav{
-      background: linear-gradient(180deg, #a251b6, #1f1642); 
+      background: linear-gradient(180deg, #a240b6, #090414); 
   width:100%;
   height:85px;
 }
@@ -29,50 +29,82 @@ body{
   text-align:center;
   font-size:25px;
   cursor: pointer;
-  transition-duration: 2s ; 
+  transition-duration: 1s ; 
   transition-timing-function: cubic-bezier(0.1, 0.3, 0.1, 1)
 }
 
 .nav .navcenter:hover{
   transform: scale(1.2) translateY(-10px);
-  text-shadow: 3px 2px 2px rgba(173, 243, 255, 0.5);
+  text-shadow: 3px 2px 2px rgba(245, 242, 196, 0.5);
 }
 p{
   position:absolute;
   margin-top:150%;
   font-size:150px;
 }
+.tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: #130d1d;
+    width: 230px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 2px 2px rgba(245, 242, 196, 0.5);
+    transition: transform 0.3s;
+    cursor: pointer;
+    height:150px;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 60%;
+    border-radius: 15px 15px 0 0;
+}
+
+.tarjeta h3: {
+    margin: 10px 0 5px;
+    color: #a240b6;
+}
+
 footer{
   height:fit-content;
   background-color:#d5ffd5;
   position:fixed;
   top:97%;
   width:100%;
-  height: 3%;
+  height: 50%;
   z-index: 50;
   align-content: center;
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-footer button{
-  width:4%;
-  height:3%;
+footer .pene img{
+  width:3%;
+  position:relative;
+  height:7%;
   margin-left:48%;
 }
-footer:hover{
-  transform:translateY(-60px);
-  transform:scaleY(10);
+
+footer .tarjetas{
+  position:relative;
+  margin-bottom:66%;
+  z-index:100;
   opacity:1;
 }
-footer:hover button{
-  opacity:0;
+
+footer:hover{
+  margin-top:-300px;
+  opacity:1;
 }
-footer button img{
-  width:100%;
+footer:hover .pene img{
+  rotate:180deg;
 }
-footer ul{
-  list-style:none;
-  padding-left: 35%;
-  block-size:10%;
-  padding-top:20px;
-}
+
