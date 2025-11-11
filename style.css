@@ -32,15 +32,32 @@ body{
   transition-duration: 2s ; 
   transition-timing-function: cubic-bezier(0.1, 0.3, 0.1, 1)
 }
-
 .nav .navcenter:hover{
   transform: scale(1.2) translateY(-10px);
   text-shadow: 3px 2px 2px rgba(173, 243, 255, 0.5);
 }
-p{
-  position:absolute;
-  margin-top:150%;
-  font-size:150px;
+.titulo{
+    text-align: center;
+}
+.imagen{
+width: 250px;
+height: 250px;
+margin-left: 10%;
+}
+.imagen2{
+ width: 250px;
+height: 250px;
+margin-left: 10%;
+}
+.todo{
+    display: flex;
+}
+.texto{
+text-align: left;
+}
+.imagenes{
+    margin-top: auto;
+
 }
 footer{
   height:fit-content;
