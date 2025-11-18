@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
 
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: "Lobster Two", sans-serif; }
-body { background: #f8feff; color: rgb(0, 0, 0); text-align: center; }
+body {  color: black; text-align: center; background:url(codigo-binario-3786926283.gif);}
 
 
 .nav { background-color: #3b444d; height: 85px; display: flex; align-items: center; justify-content: center; }
 .nav ul { list-style: none; display: flex; gap: 20px; }
 .nav li a, .nav li { color: rgb(231, 231, 231); font-size: 45px; transition: 0.3s; text-decoration: none; cursor: pointer; }
 .nav li:hover { transform: translateY(-5px) scale(1.1); text-shadow: 2px 2px 5px rgba(164, 228, 255, 0.66); }
+.content{
+  width:85%;
+  background-color:white;
+  justify-self:center;
+  height:800px;
+}
+.content h2{
+  width:80%;
+  background-color: #c0c0c0;
+  font-size: 25px;
+  justify-self:center;
+  margin-bottom: 50px;
+  border-radius:25px;
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -88,22 +102,29 @@ footer {
   #c3 { transform: translateX(150px) scale(0.9); }
 }
 
-
 .tarjetas {
-    display: flex;
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 20px;
+    padding-left:65px;
 }
 .tarjeta {
-    background-color: #838383;
+    background-color: #ffb6ed;
     padding: 20px;
     border-radius: 12px;
-}
-.tarjeta p{
-  font-size:25px;
+    height:600px;
+    width: 85%;
+    
 }
 .tarjeta h3{
-  font-size:35px;
+  font-size: 45px;
 }
-h1{font-size:50px;}
-p{font-size:35px;}
+.tarjeta p{
+  font-size: 25px;
+}
+.tarjeta img{
+  width:fit-content;
+  height:200px;
+  border-radius: 15px;
+  margin-top:15px;
+}

@@ -118,3 +118,12 @@ footer {
   #c1 { transform: translateX(-150px) scale(0.9); }
   #c3 { transform: translateX(150px) scale(0.9); }
 }
+
+h1{
+  font-size:80px;
+}
+p{
+  font-size:50px;
+  width:85%;
+  justify-self:center;
+}
